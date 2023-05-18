@@ -9,7 +9,7 @@ export async function fetchProducts(): Promise<Product[]> {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error("Error fetching products:", error);
+    console.log("Error fetching products:", error);
     throw error;
   }
 }
@@ -20,7 +20,7 @@ export async function fetchProductById(productId: number): Promise<Product> {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error("Error fetching product by ID:", error);
+    console.log("Error fetching product by ID:", error);
     throw error;
   }
 }
@@ -31,7 +31,7 @@ export async function fetchMenu(): Promise<MenuSection[]> {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error("Error fetching menu:", error);
+    console.log("Error fetching menu:", error);
     throw error;
   }
 }
